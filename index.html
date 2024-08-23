@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>priya's Weather forecast application</title>
+    <!-- tailwind css link -->
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   <!-- js link page--> <script src="priya.js" defer></script>  
+    <link href="style.css" rel="stylesheet">
+    
+    <!-- httask 1  basic html and css files -->
+
+</head>
+<!-- <body class="bg-blue-100 text-gray-800 "> -->
+
+        <body class=" flex items-center justify-center min-h-screen"  >
+            <!--  -->
+    <!-- <h1 class="text-3xl font-bold text-center mt-10" >Whether Forecast </h1> -->
+    <section  class="container  bg-blue-200 p-6 rounded-lg shadow-md mb-6" >
+       
+        <h1 class="text-3xl font-bold text-center mt-10" >Whether Forecast </h1>
+        
+        <section class="weather-input   flex items-center space-x-4 mb-4">
+            <h3 >Enter city name</h3>
+            
+                
+
+            <input class="city-input border border-gray-300 p-2 rounded-md w-full "  type="text" placeholder="Enter city name">
+            <button class="search-btn bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Search</button>
+            <section class="separator"></section>
+            
+            <button class="location-btn bg-green-500 text-cyan px-4 py-2 rounded-md:hover:bg-green-600">Use Current Location</button>
+            <!-- dropdown list selection -->
+            <section id="cityDropdown" class="city-dropdown border border-gray-300  p-2 rounded-md" >
+                <option value="" disabled selected>Select a city</option>
+            </section>
+
+        </section>
+
+<!-- weather cards -->
+    <section class="weather-data bg-blue p-6  rounded-lg shadow-md">
+        <!-- current location forecast -->
+        <section class="current-weather flex items-center mb-6" > 
+            <section class="details flex-1">
+                <h2 class="text-2xl font-bold">______(_____)</h2>
+                <h4 class="text-lg">Temp:__°C</h4>
+                <h4 class="text-lg">Wind:__M/S</h4>
+                <h4 class="text-lg">Humidity:__%</h4>
+
+            </section>
+            <section class="icon flex-none">
+                <img class="w-24 h-24" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather">
+                <h4 class="text-lg text-center">Moderate Rain</h4>
+            </section>
+        </section>
+    <section class="days-forecast">
+        <h2>5-Day Forecast</h2>
+        <ul  class=" weather-cards  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <li  class=" card  bg-blue p-4 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-2">(_________)</h3>
+                <h4 class="text-md">Temp:__°C</h4>
+                <h4 class="text-md">Wind:__M/S</h4>
+                <h4 class="text-md">Humidity:__%</h4>
+            </li>
+            <li   class=" card bg-blue p-4 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-2">(_________)</h3>
+                <h4 class="text-md">Temp:__°C</h4>
+                <h4 class="text-md">Wind:__M/S</h4>
+                <h4 class="text-md">Humidity:__%</h4>
+            </li>
+            <li  class=" card bg-blue p-4 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-2">(_________)</h3>
+                <h4 class="text-md">Temp:__°C</h4>
+                <h4 class="text-md">Wind:__M/S</h4>
+                <h4 class="text-md">Humidity:__%</h4>
+            </li>
+            <li  class=" card bg-blue p-4 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-2" >(_________)</h3>
+                <h4 class="text-md">Temp:__°C</h4>
+                <h4 class="text-md">Wind:__M/S</h4>
+                <h4 class="text-md">Humidity:__%</h4>
+            </li>
+            
+            <li   class=" card bg-blue p-4 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-2">(_________)</h3>
+                <h4 class="text-md"></h4>>Temp:__°C</h4>
+                <h4 class="text-md"></h4>>Wind:__M/S</h4>
+                <h4 class="text-md"></h4>>Humidity:__%</h4>
+            </li>
+            
+
+
+
+    </section>
+
+    </section>
+</section>
+
+
+</body>
+</html>
